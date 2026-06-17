@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dune Tote — ATELIER NOIR</title>
+  <meta name="description" content="The Dune Tote — hand-stitched from full-grain vegetable-tanned leather. Part of The Desert Line by ATELIER NOIR." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" aria-hidden="true"></div>
+
+
+    <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <a href="index.html" class="header__logo" aria-label="ATELIER NOIR Home">
+      ATELIER NOIR
+    </a>
+
+    <nav class="header__nav" role="navigation" aria-label="Main navigation">
+      <a href="collection.html" class="header__link">COLLECTIONS</a>
+      <a href="our-story.html" class="header__link">OUR STORY</a>
+    </nav>
+
+    <div class="flex" style="align-items: center; gap: var(--sp-24);">
+      <button class="header__icon-btn" aria-label="Search" onclick="window.openSearch && window.openSearch()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align: middle;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="header__icon-btn" aria-label="Wishlist" onclick="window.openWishlist && window.openWishlist()" style="position: relative;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align: middle;"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        <span class="header__wishlist-count" style="position: absolute; top: -8px; right: -8px; background: var(--sand); color: var(--ink); font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500;">0</span>
+      </button>
+      <button class="header__cart" aria-label="Shopping bag" onclick="window.openCart && window.openCart()">
+        <span>Bag</span>
+        <span class="header__cart-count">0</span>
+      </button>
+
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="collection.html" class="mobile-nav__link">Collections</a>
+    <a href="our-story.html" class="mobile-nav__link">Our Story</a>
+  </nav>
+
+
+
+
+  <!-- ============================================================
+       PRODUCT DETAIL
+       ============================================================ -->
+  <main class="pdp" id="pdp">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="pdp__breadcrumb" aria-label="Breadcrumb" data-reveal>
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="collection.html">Collections</a>
+        <span>/</span>
+        <span class="pdp__breadcrumb-name">Dune Tote</span>
+      </nav>
+
+      <!-- Two-column layout -->
+      <div class="pdp__layout">
+
+        <!-- Left: Gallery -->
+        <div class="pdp__gallery" data-reveal>
+          <div class="pdp__main-img-wrap">
+            <img src="assets/images/dune-tote-1.jpg" alt="Dune Tote" class="pdp__main-img" id="pdp-main-image" />
+          </div>
+          <div class="pdp__thumbnails">
+            <!-- Thumbnails rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="pdp__info">
+          <p class="eyebrow pdp__collection-name" data-reveal>The Desert Line</p>
+
+          <h1 class="pdp__name" data-reveal data-reveal-delay="0.05">Dune Tote</h1>
+
+          <p class="pdp__price" data-reveal data-reveal-delay="0.1">£890</p>
+
+          <p class="pdp__desc" data-reveal data-reveal-delay="0.15">
+            Hand-stitched from full-grain vegetable-tanned leather, the Dune Tote embodies quiet luxury. Its unlined construction softens with age, developing a patina as unique as its owner.
+          </p>
+
+          <!-- Color Selector -->
+          <div class="pdp__selector" data-reveal data-reveal-delay="0.2">
+            <p class="pdp__selector-label">Color</p>
+            <div class="pdp__selector-options pdp__color-options">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="pdp__selector" data-reveal data-reveal-delay="0.25">
+            <p class="pdp__selector-label">Size</p>
+            <div class="pdp__selector-options pdp__size-options">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Add to Bag -->
+          <div data-reveal data-reveal-delay="0.3">
+            <div class="magnetic">
+              <button class="btn btn--filled pdp__add-to-bag" id="add-to-bag" aria-label="Add to bag">
+                <span>Add to Bag</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordions -->
+          <div class="pdp__accordion" data-reveal data-reveal-delay="0.35">
+            <div class="pdp__accordion-item">
+              <button class="pdp__accordion-trigger" aria-expanded="false">
+                <span>Details & Materials</span>
+                <span class="pdp__accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="pdp__accordion-content">
+                <div class="pdp__accordion-body">
+                  <p>Full-grain vegetable-tanned leather sourced from our partner tanneries in Northern Africa. Unlined interior with cotton-canvas base reinforcement. Solid brass hardware, hand-polished. Interior slip pocket with embossed logo.</p>
+                  <br />
+                  <p><strong>Dimensions:</strong> W 40cm × H 32cm × D 14cm</p>
+                  <p><strong>Weight:</strong> 680g</p>
+                  <p><strong>Origin:</strong> Handcrafted in our atelier</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdp__accordion-item">
+              <button class="pdp__accordion-trigger" aria-expanded="false">
+                <span>Shipping</span>
+                <span class="pdp__accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="pdp__accordion-content">
+                <div class="pdp__accordion-body">
+                  <p>Complimentary worldwide shipping on all orders. Express delivery available at checkout.</p>
+                  <br />
+                  <p><strong>UK:</strong> 2–3 business days</p>
+                  <p><strong>Europe:</strong> 3–5 business days</p>
+                  <p><strong>International:</strong> 5–10 business days</p>
+                  <br />
+                  <p>Each piece is wrapped in our signature charcoal tissue paper and presented in a linen dust bag within a hand-finished box.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdp__accordion-item">
+              <button class="pdp__accordion-trigger" aria-expanded="false">
+                <span>Returns & Care</span>
+                <span class="pdp__accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="pdp__accordion-content">
+                <div class="pdp__accordion-body">
+                  <p>We offer a 30-day return policy on all unworn items in original condition. Items should be returned in their original packaging.</p>
+                  <br />
+                  <p><strong>Care:</strong> Our vegetable-tanned leather develops a beautiful patina over time. Avoid prolonged exposure to direct sunlight. Clean with a soft, damp cloth. Apply a small amount of leather conditioner every 3–6 months to maintain suppleness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- ============================================================
+       RELATED PRODUCTS
+       ============================================================ -->
+  <section class="related section--sm" id="related" aria-label="Related products">
+    <div class="container">
+      <div class="related__header">
+        <p class="eyebrow" data-reveal>Complete the Look</p>
+        <h2 data-reveal data-reveal-delay="0.1">You May Also Like</h2>
+      </div>
+      <div class="related__grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">ATELIER NOIR</p>
+          <p class="footer__brand-desc">
+            Luxury leather goods & fashion. Crafted in shadow, worn in light. Handmade with intention at the edge of the Sahara.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="collection.html" class="footer__link">All Collections</a></li>
+            <li><a href="collection.html?category=bags" class="footer__link">Bags</a></li>
+            <li><a href="collection.html?category=accessories" class="footer__link">Accessories</a></li>
+            <li><a href="collection.html" class="footer__link">Gift Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">House</h4>
+          <ul class="footer__links">
+            <li><a href="our-story.html" class="footer__link">Our Story</a></li>
+            <li><a href="our-story.html" class="footer__link">Craft & Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer__link">Care Guide</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 ATELIER NOIR. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">Instagram</a>
+          <a href="#" class="footer__social" aria-label="Pinterest">Pinterest</a>
+          <a href="#" class="footer__social" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <p class="footer__wordmark" aria-hidden="true">ATELIER NOIR</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <script type="module">
+    import { initMain } from './js/main.js';
+    import { initAllAnimations } from './js/animations.js';
+    import { initProductPage } from './js/shop.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      await initMain();
+      initProductPage();
+      initAllAnimations();
+    });
+  </script>
+</body>
+</html>

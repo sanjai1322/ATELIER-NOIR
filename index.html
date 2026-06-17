@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER NOIR — Crafted in Shadow. Worn in Light.</title>
+  <meta name="description"
+    content="ATELIER NOIR — A luxury leather goods and fashion house. Handcrafted pieces born from desert earth and artisan tradition. Explore our collections." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <span class="loader__brand">ATELIER NOIR</span>
+    <div class="loader__line"></div>
+  </div>
+
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <a href="index.html" class="header__logo" aria-label="ATELIER NOIR Home">
+      ATELIER NOIR
+    </a>
+
+    <nav class="header__nav" role="navigation" aria-label="Main navigation">
+      <a href="collection.html" class="header__link">COLLECTIONS</a>
+      <a href="our-story.html" class="header__link">OUR STORY</a>
+    </nav>
+
+    <div class="flex" style="align-items: center; gap: var(--sp-24);">
+      <button class="header__icon-btn" aria-label="Search" onclick="window.openSearch && window.openSearch()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          style="vertical-align: middle;">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+      </button>
+      <button class="header__icon-btn" aria-label="Wishlist" onclick="window.openWishlist && window.openWishlist()"
+        style="position: relative;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          style="vertical-align: middle;">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <span class="header__wishlist-count"
+          style="position: absolute; top: -8px; right: -8px; background: var(--sand); color: var(--ink); font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500;">0</span>
+      </button>
+      <button class="header__cart" aria-label="Shopping bag" onclick="window.openCart && window.openCart()">
+        <span>Bag</span>
+        <span class="header__cart-count">0</span>
+      </button>
+
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="collection.html" class="mobile-nav__link">Collections</a>
+    <a href="our-story.html" class="mobile-nav__link">Our Story</a>
+  </nav>
+
+
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <!-- Three.js Canvas Layer -->
+    <div class="hero__canvas" aria-hidden="true"></div>
+
+    <!-- CSS Grain Fallback -->
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <!-- Background Video -->
+    <div class="hero__bg" aria-hidden="true">
+      <video src="assets/images/Woman_still,_desert_wind_blows_202606170307.mp4" poster="assets/images/hero.jpg" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow hero__eyebrow">Est. MMXXIV — Leather Goods & Fashion</p>
+
+      <h1 class="hero__title">
+        <span class="word"><span class="word-inner">Crafted</span></span>
+        <span class="word"><span class="word-inner">in</span></span>
+        <span class="word"><span class="word-inner">shadow.</span></span>
+        <br />
+        <span class="word"><span class="word-inner">Worn</span></span>
+        <span class="word"><span class="word-inner">in</span></span>
+        <span class="word"><span class="word-inner">light.</span></span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Luxury leather goods born from artisan tradition and the vast silence of the desert. Each piece carries the
+        patience of its making.
+      </p>
+
+      <div class="hero__cta">
+        <a href="collection.html" class="magnetic">
+          <span class="btn btn--gold">
+            <span>Explore Collections</span>
+            <span class="btn__arrow">→</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BRAND STATEMENT
+       ============================================================ -->
+  <section class="brand-statement section" id="brand-statement" aria-label="Brand statement">
+    <div class="container">
+      <p class="brand-statement__text">
+        <span class="line"><span class="line-inner">Where desert earth meets artisan hands,</span></span>
+        <span class="line"><span class="line-inner">something enduring is born. We don't chase trends —</span></span>
+        <span class="line"><span class="line-inner">we craft heirlooms. Each stitch a quiet declaration</span></span>
+        <span class="line"><span class="line-inner">that true luxury is felt, never announced.</span></span>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FEATURED COLLECTIONS
+       ============================================================ -->
+  <section class="collections section--sm" id="collections" aria-label="Featured Collections">
+    <div class="container">
+      <div class="collections__header" data-reveal>
+        <p class="eyebrow">Collections</p>
+      </div>
+
+      <div class="collections__grid">
+        <!-- Collection 1: Large -->
+        <article class="collection-card" data-reveal>
+          <div class="collection-card__img-wrap" data-parallax-wrapper>
+            <img src="assets/images/collection-desert.jpg" alt="The Desert Line collection" class="collection-card__img"
+              data-parallax="-0.12" loading="lazy" />
+            <div class="collection-card__overlay"></div>
+          </div>
+          <div class="collection-card__content">
+            <p class="eyebrow collection-card__eyebrow">01 — New Season</p>
+            <h2 class="collection-card__title">The Desert Line</h2>
+            <a href="collection.html" class="collection-card__link">
+              Explore <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Collection 2 -->
+        <article class="collection-card" data-reveal data-reveal-delay="0.15">
+          <div class="collection-card__img-wrap" data-parallax-wrapper>
+            <img src="assets/images/collection-nocturne.jpg" alt="Nocturne collection" class="collection-card__img"
+              data-parallax="-0.08" loading="lazy" />
+            <div class="collection-card__overlay"></div>
+          </div>
+          <div class="collection-card__content">
+            <p class="eyebrow collection-card__eyebrow">02 — Evening</p>
+            <h2 class="collection-card__title">Nocturne</h2>
+            <a href="collection.html" class="collection-card__link">
+              Explore <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Collection 3 -->
+        <article class="collection-card" data-reveal data-reveal-delay="0.25">
+          <div class="collection-card__img-wrap" data-parallax-wrapper>
+            <img src="assets/images/collection-heritage.jpg" alt="Heritage Leather collection"
+              class="collection-card__img" data-parallax="-0.1" loading="lazy" />
+            <div class="collection-card__overlay"></div>
+          </div>
+          <div class="collection-card__content">
+            <p class="eyebrow collection-card__eyebrow">03 — Signature</p>
+            <h2 class="collection-card__title">Heritage Leather</h2>
+            <a href="collection.html" class="collection-card__link">
+              Explore <span>→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HORIZONTAL PRODUCT SHOWCASE (Pinned Scroll)
+       ============================================================ -->
+  <section class="showcase" id="showcase" aria-label="Product Showcase">
+    <div class="showcase__header container">
+      <p class="eyebrow" data-reveal>Featured Pieces</p>
+      <h2 data-reveal data-reveal-delay="0.1">Curated Selections</h2>
+    </div>
+
+    <div class="showcase__inner">
+      <div class="showcase__track">
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/dune-tote-1.jpg" alt="Dune Tote" class="showcase__card-img" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">The Desert Line</p>
+          <h3 class="showcase__card-name">Dune Tote</h3>
+          <p class="showcase__card-price">£890</p>
+        </article>
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/nocturne-crossbody-1.jpg" alt="Nocturne Crossbody"
+              class="showcase__card-img" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">Nocturne</p>
+          <h3 class="showcase__card-name">Nocturne Crossbody</h3>
+          <p class="showcase__card-price">£640</p>
+        </article>
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/atlas-weekender-1.jpg" alt="Atlas Weekender" class="showcase__card-img" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">Heritage Leather</p>
+          <h3 class="showcase__card-name">Atlas Weekender</h3>
+          <p class="showcase__card-price">£1,250</p>
+        </article>
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/sahara-cardholder-1.jpg"
+              alt="Sahara Card Holder" class="showcase__card-img" loading="lazy" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">The Desert Line</p>
+          <h3 class="showcase__card-name">Sahara Card Holder</h3>
+          <p class="showcase__card-price">£180</p>
+        </article>
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/mirage-belt-1.jpg" alt="Mirage Belt" class="showcase__card-img" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">The Desert Line</p>
+          <h3 class="showcase__card-name">Mirage Belt</h3>
+          <p class="showcase__card-price">£320</p>
+        </article>
+
+        <article class="showcase__card">
+          <div class="showcase__card-img-wrap">
+            <img src="assets/images/eclipse-clutch-1.jpg" alt="Eclipse Clutch" class="showcase__card-img" />
+            <div class="showcase__card-overlay">
+              <button class="showcase__card-add" onclick="import('./js/main.js').then(m => m.addToCart())">+ Add to
+                Bag</button>
+            </div>
+          </div>
+          <p class="showcase__card-collection">Nocturne</p>
+          <h3 class="showcase__card-name">Eclipse Clutch</h3>
+          <p class="showcase__card-price">£540</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STORY TEASER BAND
+       ============================================================ -->
+  <section class="story-teaser" id="story-teaser" aria-label="Our Story">
+    <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;" data-reveal>
+      <p class="story-teaser__text body-lg font-display" style="font-family: var(--font-display); font-size: clamp(1.4rem, 2.5vw, 2.2rem); line-height: 1.4; margin-bottom: var(--sp-24); font-style: italic; color: var(--bone);">
+        "Every piece begins with a single hide, selected by hand and crafted with intention."
+      </p>
+      <a href="our-story.html" class="story-teaser__link font-display" style="font-family: var(--font-display); font-size: 1.15rem; color: var(--sand); text-decoration: none; display: inline-flex; align-items: center; gap: var(--sp-8); transition: color var(--dur-fast);">
+        Read our story <span style="transition: transform var(--dur-fast);">→</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       LOOKBOOK / GALLERY
+       ============================================================ -->
+  <section class="lookbook section--sm" id="lookbook" aria-label="Lookbook">
+    <div class="container container--wide">
+      <div class="lookbook__header" data-reveal>
+        <p class="eyebrow">Lookbook — SS25</p>
+      </div>
+
+      <div class="lookbook__grid">
+        <div class="lookbook__item">
+          <img src="assets/images/look-1.jpg" alt="Atelier Noir Lookbook 1" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-2.jpg" alt="Atelier Noir Lookbook 2" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-3.jpg" alt="Atelier Noir Lookbook 3" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-4.jpg" alt="Atelier Noir Lookbook 4" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-5.jpg" alt="Atelier Noir Lookbook 5" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-6.jpg" alt="Atelier Noir Lookbook 6" class="lookbook__img" />
+        </div>
+        <div class="lookbook__item">
+          <img src="assets/images/look-7.png" alt="Atelier Noir Lookbook 7" class="lookbook__img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIAL / PRESS
+       ============================================================ -->
+  <section class="testimonials" id="testimonials" aria-label="Press and Testimonials">
+    <div class="container container--narrow">
+      <blockquote class="testimonials__quote" data-reveal>
+        "ATELIER NOIR represents a new breed of luxury — one rooted in restraint, material honesty, and the conviction
+        that less can be profoundly more."
+      </blockquote>
+      <p class="testimonials__source" data-reveal data-reveal-delay="0.1">— Monocle Magazine</p>
+
+      <div class="testimonials__logos" data-reveal data-reveal-delay="0.2">
+        <span class="testimonials__logo">Vogue</span>
+        <span class="testimonials__logo">Monocle</span>
+        <span class="testimonials__logo">Wallpaper*</span>
+        <span class="testimonials__logo">Kinfolk</span>
+        <span class="testimonials__logo">Cereal</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       NEWSLETTER / CTA
+       ============================================================ -->
+  <section class="newsletter section" id="newsletter" aria-label="Newsletter signup">
+    <div class="container container--narrow">
+      <p class="eyebrow newsletter__eyebrow" data-reveal>Stay Close</p>
+      <h2 class="newsletter__title" data-reveal data-reveal-delay="0.1">Join the Atelier</h2>
+      <p class="newsletter__subtitle" data-reveal data-reveal-delay="0.15">
+        Early access to new collections, behind-the-scenes craft stories, and invitations to private events.
+      </p>
+      <form class="newsletter__form" data-reveal data-reveal-delay="0.2" onsubmit="event.preventDefault();">
+        <input type="email" class="newsletter__input" placeholder="Your email address" aria-label="Email address"
+          id="newsletter-email" />
+        <div class="magnetic">
+          <button type="submit" class="btn btn--gold">
+            <span>Subscribe</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">ATELIER NOIR</p>
+          <p class="footer__brand-desc">
+            Luxury leather goods & fashion. Crafted in shadow, worn in light. Handmade with intention at the edge of the
+            Sahara.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="collection.html" class="footer__link">All Collections</a></li>
+            <li><a href="collection.html?category=bags" class="footer__link">Bags</a></li>
+            <li><a href="collection.html?category=accessories" class="footer__link">Accessories</a></li>
+            <li><a href="collection.html" class="footer__link">Gift Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">House</h4>
+          <ul class="footer__links">
+            <li><a href="our-story.html" class="footer__link">Our Story</a></li>
+            <li><a href="our-story.html" class="footer__link">Craft & Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer__link">Care Guide</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 ATELIER NOIR. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">Instagram</a>
+          <a href="#" class="footer__social" aria-label="Pinterest">Pinterest</a>
+          <a href="#" class="footer__social" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <p class="footer__wordmark" aria-hidden="true">ATELIER NOIR</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <!-- CDN Libraries -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- App Modules -->
+  <script type="module">
+    import { initMain } from './js/main.js';
+    import { initAllAnimations } from './js/animations.js';
+    import { initHeroEffect } from './js/hero.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Core init (loader → Lenis → header → cursor → etc.)
+      await initMain();
+
+      // Three.js hero
+      initHeroEffect();
+
+      // All scroll animations
+      initAllAnimations();
+    });
+  </script>
+</body>
+
+</html>
